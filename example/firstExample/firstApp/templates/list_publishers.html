@@ -1,0 +1,29 @@
+<html>
+{% include './header.html' %}
+<body>
+{% include './navigation.html' %}
+<div><a href="../new_publisher">New Publisher</a></div>
+<table class="table table-stripped">
+    <thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+    </thead>
+    <tbody>
+    {% for publisher in publishers %}
+    <tr>
+        <td>{{publisher.id}}</td>
+        <td>{{publisher.name}}</td>
+        <td>{{publisher.address}}</td>
+        <td>{{publisher.city}}</td>
+        <td>{{publisher.state_province}}</td>
+        <td>{{publisher.country}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

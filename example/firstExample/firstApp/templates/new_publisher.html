@@ -1,0 +1,52 @@
+<html>
+{% include './header.html'%}
+<body>
+{% include './navigation.html' %}
+<div class="form-title">
+    <span>New Publisher</span>
+</div>
+
+<form class="form">
+    <div class="input-group">
+        <label for="name" class="col-2 control-label">Name:</label>
+        <div class="col-10 ">
+            <input type="text" id="name" class="form-control" placeholder="Name">
+        </div>
+    </div>
+
+    <div class="input-group">
+        <label for="address" class="col-2 control-label">Address:</label>
+        <div class="col-10">
+            <input type="text" id="address" class="form-control" placeholder="Address">
+        </div>
+    </div>
+
+    <div class="input-group">
+        <label for="city" class="col-2 control-label">City:</label>
+        <div class="col-10">
+            <input type="text" id="city" class="form-control" placeholder="City">
+        </div>
+    </div>
+
+    <div class="input-group">
+        <label for="state_province" class="col-2 control-label">State Province:</label>
+        <div class="col-10">
+            <input type="text" id="state_province" class="form-control" placeholder="State Province">
+        </div>
+    </div>
+
+    <div class="input-group">
+        <label for="country" class="col-2 control-label">Country:</label>
+        <div class="col-10">
+            <input type="text" id="country" class="form-control" placeholder="Country">
+        </div>
+    </div>
+
+    <div class="input-group">
+        <div class="offset-6 col-6 ">
+            <input type="submit" class="btn btn-outline-primary" id="btn-submit" value="Save">
+        </div>
+    </div>
+</form>
+</body>
+</html>

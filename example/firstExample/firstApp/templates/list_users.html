@@ -1,0 +1,21 @@
+<html>
+{% include './header.html' %}
+<body>
+{% include './navigation.html' %}
+<div><a href="../new_user">New User</a></div>
+<table class="table table-stripped">
+    <thead>
+    <th>Name</th>
+    <th>User Name</th>
+    </thead>
+    <tbody>
+    {% for user in users %}
+    <tr>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
